@@ -1,0 +1,7 @@
+config.json
+cpap_state.json
+cpap_alert_flag.txt
+cpap_monitor.log
+__pycache__/
+*.pyc
+.DS_Store

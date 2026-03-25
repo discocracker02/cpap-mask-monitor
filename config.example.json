@@ -1,0 +1,19 @@
+{
+  "tapo": {
+    "email": "your_tapo_account_email@example.com",
+    "password": "your_tapo_account_password",
+    "ip": "192.168.x.x"
+  },
+  "pushover": {
+    "user_key": "your_pushover_user_key",
+    "app_token": "your_pushover_app_token"
+  },
+  "monitor": {
+    "poll_seconds": 120,
+    "idle_minutes": 10,
+    "watt_threshold": 5,
+    "confirm_count": 2,
+    "sleep_start_hour": 22,
+    "sleep_end_hour": 9
+  }
+}
