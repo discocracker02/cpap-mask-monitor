@@ -284,3 +284,6 @@ MIT — free to use, modify, and distribute. See [LICENSE](LICENSE) for details.
 ## Disclaimer
 
 This tool is not a medical device. It is not intended to diagnose, treat, or monitor any medical condition. Always consult your physician regarding your CPAP therapy. The alert system is a convenience tool — do not rely solely on it for therapy compliance.
+
+## Supported Smart Plugs
+See [README_PLUGS.md](README_PLUGS.md) for the full list of supported plugs including Tapo, Kasa, Wipro, and Havells.
