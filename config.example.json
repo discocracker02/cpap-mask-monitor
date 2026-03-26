@@ -1,19 +1,44 @@
 {
+  "_comment": "Set plug_type to: tapo, kasa, or tuya. Only fill in the section matching your plug_type.",
+
+  "plug_type": "tapo",
+
   "tapo": {
+    "_comment": "For Tapo P110, P115. Get IP from Tapo app → Device Info.",
     "email": "your_tapo_account_email@example.com",
     "password": "your_tapo_account_password",
     "ip": "192.168.x.x"
   },
+
+  "kasa": {
+    "_comment": "For Kasa KP115, EP25, KP125M. Get IP from Kasa app → Device Info. Username/password only needed for newer plugs (post-2022).",
+    "ip": "192.168.x.x",
+    "username": "your_kasa_account_email@example.com",
+    "password": "your_kasa_account_password"
+  },
+
+  "tuya": {
+    "_comment": "For Tuya-compatible plugs. Run: python3 -m tinytuya wizard to get device_id and local_key.",
+    "ip": "192.168.x.x",
+    "device_id": "your_device_id_from_tinytuya_wizard",
+    "local_key": "your_local_key_from_tinytuya_wizard",
+    "version": 3.3,
+    "dps_power_key": "19",
+    "power_divisor": 10
+  },
+
   "pushover": {
     "user_key": "your_pushover_user_key",
     "app_token": "your_pushover_app_token"
   },
+
   "monitor": {
     "poll_seconds": 120,
     "idle_minutes": 10,
     "watt_threshold": 5,
     "confirm_count": 2,
     "sleep_start_hour": 22,
-    "sleep_end_hour": 9
+    "sleep_end_hour": 9,
+    "timezone_offset_hours": 5.5
   }
 }
