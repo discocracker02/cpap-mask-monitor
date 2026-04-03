@@ -34,4 +34,4 @@ class TapoAdapter(BasePlugAdapter):
     async def get_watts(self) -> float:
         device = await self._client.p110(self._ip)
         info   = await device.get_current_power()
-        return info.current_power / 1000
+        return float(info.current_power)
